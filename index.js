@@ -3,14 +3,14 @@ const fastify = require('fastify')({ logger: {level: 'debug'} })
 
 // Declare a route
 fastify.get('/health', async (request, reply) => {
-    return { healthcheck: true }
+    return { healthcheck: true, prettyPrint: true }
   })
 
 
 // Declare a route
 fastify.post('/', async (request, reply) => {
     fastify.log.debug("Hook received")
-    fastify.log.debug("Body: "+request.body)
+    fastify.log.debug(JSON.stringify(request.body, null, '\t'))
 
     
     
