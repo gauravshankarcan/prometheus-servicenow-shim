@@ -1,9 +1,10 @@
-const fastify = require('fastify')({ logger: {level: 'debug'} })
+require('dotenv').config()
+const fastify = require('fastify')({ logger: {level: 'debug', prettyPrint: true} })
 
 
 // Declare a route
 fastify.get('/health', async (request, reply) => {
-    return { healthcheck: true, prettyPrint: true }
+    return { healthcheck: true }
   })
 
 

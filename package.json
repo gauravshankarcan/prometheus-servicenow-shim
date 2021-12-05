@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/gauravshankarcan/prometheus-servicenow-shim#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "fastify": "^3.24.1"
   }
 }
