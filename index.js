@@ -8,9 +8,8 @@ fastify.get('/health', async (request, reply) => {
 
 
 // Declare a route
-fastify.get('/', async (request, reply) => {
+fastify.post('/', async (request, reply) => {
     fastify.log.debug("Hook received")
-    fastify.log.debug("Method: "+ request.method)
     fastify.log.debug("Body: "+request.body)
 
     
