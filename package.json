@@ -1,0 +1,30 @@
+{
+  "name": "prometheus-servicenow-shim",
+  "version": "1.0.0",
+  "description": "Connects alertmanager webhooks to servicenow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravshankarcan/prometheus-servicenow-shim.git"
+  },
+  "keywords": [
+    "prometheus",
+    "alert",
+    "manager",
+    "webhook",
+    "shim",
+    "servicenow"
+  ],
+  "author": "Gaurav Shankar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gauravshankarcan/prometheus-servicenow-shim/issues"
+  },
+  "homepage": "https://github.com/gauravshankarcan/prometheus-servicenow-shim#readme",
+  "dependencies": {
+    "fastify": "^3.24.1"
+  }
+}
